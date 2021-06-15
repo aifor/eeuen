@@ -1,4 +1,4 @@
-## Explicit Uplift Modeling for Large-ScaleOnline Advertising: An End-to-End Approach
+## Addressing Exposure Bias in Uplift Modeling forLarge-scale Online Advertising
 
 广告和营销中存在的一个难题是如何真正有效和科学的衡量一次广告投放带来的真实增量效果，而这往往发生在广告发生曝光之后。
 
@@ -41,4 +41,11 @@
 2. 运行ALI-BRANDLIFT数据集的模型运行参数
 ![ali_brandlift](image/run_for_ali_brandlift.png)
 
-### 引用
+### 联系作者
+如果有细节和其他方法的问题，可以通过issue提问，也可以通过论文作者邮箱进行咨询
+
+### FAQ
+
+### LICENSE
+
+EEUEN使用[Apache-2.0](./LICENSE)许可
