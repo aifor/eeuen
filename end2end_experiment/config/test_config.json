@@ -1,0 +1,55 @@
+{
+  "job_name": "xdl_train_job_brand_lift",
+  "user_work_id":"${work_id}",
+  "job_type": "auc",
+  "job_type_io":"auc_xdl_io",
+  "access_id": "${your_id}",
+  "access_key": "${your_key}",
+  "script": "euen.py",
+  "docker_image": "registry.cn-hangzhou.aliyuncs.com/xdl/xdl:ubuntu-cpu-tf1.12",
+  "max_failover_wait_secs": 1800,
+  "scheduler_type": "G",
+  "scheduler_queue": "${test_queue}",
+  "scheduler_cluster": "${xdl_cluster}",
+  "odps.project.name": "${odps_project}",
+  "worker": {
+    "instance_num": 8,
+    "cpu_cores": 16,
+    "gpu_cores": 0,
+    "memory_m": 61440
+  },
+  "ps": {
+    "instance_num": 2,
+    "cpu_cores": 16,
+    "gpu_cores": 0,
+    "memory_m": 61440
+  },
+  "checkpoint": {
+    "output_dir":"hdfs://${ck_out_path}",
+    "interval_steps": 10
+  },
+  "reader": {
+    "reader_type": "odps",
+    "num_epochs": 1,
+    "reader_num": 20,
+    "io_thread": 20,
+    "batch_size": 512,
+    "label_count": 1,
+    "unique_ids": true,
+    "state_save": true,
+    "data_dir": "odps://${data_path}"
+  },
+  "odps_table": "odps://${tabel_path}",
+   "summary":{
+    "output_dir":"hdfs://${sm_out_path}",
+    "interval_steps": 5
+  },
+  "tracer.bin": {
+    "output_dir":"hdfs://${trace_path}",
+    "format": "bin"
+  },
+  "log_steps": 100,
+  "min_finish_worker_rate": 100,
+  "max_local_failover_times": 1
+}
+
