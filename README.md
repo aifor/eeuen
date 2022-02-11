@@ -41,6 +41,18 @@
 2. 运行ALI-BRANDLIFT数据集的模型运行参数
 ![ali_brandlift](image/run_for_ali_brandlift.png)
 
+### 论文引用
+@inproceedings{ke2021addressing,
+  title={Addressing Exposure Bias in Uplift Modeling for Large-scale Online Advertising},
+  author={Ke, Wenwei and Liu, Chuanren and Shi, Xiangfu and Dai, Yiqiao and Philip, S Yu and Zhu, Xiaoqiang},
+  booktitle={2021 IEEE International Conference on Data Mining (ICDM)},
+  pages={1156--1161},
+  year={2021},
+  organization={IEEE}
+}
+
+如果引用本项目代码，请注明该地址
+
 ### 联系作者
 如果有细节和其他方法的问题，可以通过issue提问，也可以通过论文作者邮箱进行咨询
 
