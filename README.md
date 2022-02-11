@@ -42,6 +42,7 @@
 ![ali_brandlift](image/run_for_ali_brandlift.png)
 
 ### 论文引用
+```
 @inproceedings{ke2021addressing,
   title={Addressing Exposure Bias in Uplift Modeling for Large-scale Online Advertising},
   author={Ke, Wenwei and Liu, Chuanren and Shi, Xiangfu and Dai, Yiqiao and Philip, S Yu and Zhu, Xiaoqiang},
@@ -50,6 +51,7 @@
   year={2021},
   organization={IEEE}
 }
+```
 
 如果引用本项目代码，请注明该地址
 
